@@ -34,6 +34,7 @@
 // const isIsIand = 'false'
 // isIsIand = true;
 
+// Exercise
 
 //If your country split in half, 
 // and each half would contain half the population, 
@@ -90,3 +91,66 @@ let language = "portuguese";
 let description = `portugal is in Europe and its 11 million people speaking portugal`;
 console.log(description);
 
+// exercise
+// Recreate the description variable from the last assignment, 
+// this time using the template literal syntax.
+
+// const country = "Portugal";
+// const continent = "Europe";
+// const population = 11;
+// const language = "Portuguese";
+
+// const description = `${country} is in ${continent}, and its ${population} million people speak ${language}.`;
+
+// console.log(description);
+
+//example
+
+// Mark and John are trying to compare their BMI (Body Mass Index),
+//  which is calculated using the formula:
+//   BMI = mass / (height * height) (mass in kg and height in meters).
+
+// Your task is to write some code to help them:
+
+// Store Mark's and John's mass and height in 
+// variables called massMark, heightMark, massJohn and heightJohn.
+
+// Calculate both their BMIs using the formula,
+//  and store the results in two variables called 
+//  BMIMark and BMIJohn.
+
+// Log the value of BMIMark and BMIJohn to the console.
+
+// BONUS: Create a boolean variable markHigherBMI 
+// containing information about whether
+
+// Mark has a higher BMI than John. Log it to the console too
+
+// TEST DATA 1: Marks weighs 78 kg and is 1.69 m tall. 
+// John weighs 92 kg and is 1.95 m tall.
+
+// TEST DATA 2: Marks weights 95 kg and is 1.88 m tall. 
+// John weights 85 kg and is 1.76 m tall.
+
+// let massMark = 78;
+// let heightMark = 1.69;
+// let massJohn = 92;
+// let heightJohn = 1.95;
+
+let massMark = 95;
+let heightMark = 1.88;
+let massJohn = 85;
+let heightJohn = 1.76;
+
+let BMIMark = massMark / heightMark ** 2;
+let BMIJohn = massJohn / (heightJohn * heightJohn);
+let markHigherBMI =BMIMark > BMIJohn;
+console.log(BMIMark, BMIJohn, markHigherBMI);
+
+
+// converting strings to number
+
+const inputYear = '1991';
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+console.log(String(23), 23);
