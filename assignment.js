@@ -421,19 +421,37 @@
 //  Prices equal or over 50 have a discount of 10.
 //   Otherwise discount is 0
 // 6. Write a simple number guessing function.
+// ...>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//1. Write a function that determines 
+// whether a given number is positive or negative.
+function originalNum(x) {
+    if (x > 0) {
+      console.log(`${x} is a positive number`);
+    } else if (x < 0) {
+      console.log(`${x} is a negative number`);
+    } else {
+      console.log(`${x} is just a number`);
+    }
+  }
+  originalNum(0);
+  originalNum(-1);
+  originalNum(1);
 
-// function checkNum(num){
-// if (num %2 ===0){
-//     console.log(`${num} is an even number`);
-// }else{
-//     console.log(`${num} is odd number`);
-// }
-// }
-// checkNum(-4);
-// checkNum(7);
-// checkNum(0);
-
-//Write a function that calculates 
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//2. Write a function that 
+// checks if a number is even or odd.
+function checkNum(num){
+if (num %2 ===0){
+    console.log(`${num} is an even number`);
+}else{
+    console.log(`${num} is odd number`);
+}
+}
+checkNum(-4);
+checkNum(7);
+checkNum(0);
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// Write a function that calculates 
 // the ticket price based on age with 
 // the following conditions: age below 
 // 12 pay a ticket price of 5, age below 
@@ -442,41 +460,41 @@
 // Hover over a message to pin it
 // keep
 
-// function ticetPrice(age){
-// if (age < 12){
-// console.log(`Age ${age} pay a ticket price of 5 `);
-// }else if (age < 18){
-// console.log(`Age ${age} pay a ticket price of 10`);
-// }else if (age < 60){
-//     console.log(`Age ${age} pay a ticket price of 15`);
-// }else{
-//     console.log(`Age ${age} pays nothing`)
-// }
-// }
-// ticetPrice(8);
-// ticetPrice(15);
-// ticetPrice(100);
-
-//Write a function that calculates a 
+function ticetPrice(age){
+if (age < 12){
+console.log(`Age ${age} pay a ticket price of 5 `);
+}else if (age < 18){
+console.log(`Age ${age} pay a ticket price of 10`);
+}else if (age < 60){
+    console.log(`Age ${age} pay a ticket price of 15`);
+}else{
+    console.log(`Age ${age} pays nothing`)
+}
+}
+ticetPrice(8);
+ticetPrice(15);
+ticetPrice(100);
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// Write a function that calculates a 
 // discount based on the purchase amount.Prices 
 // equal or over 100 discount have a discount of 20.
 //  Prices equal or over 50 have a discount of 10.
 //   Otherwise discount is 0
 
-// function discountPrice (prices){
-//     if (prices >= 100){
-//         console.log(`prices ${prices} have a discount of 20`);
-//     }else if (prices >= 50){
-//         console.log(`prices ${prices} have a discount of 10`);
-//     }else{
-//         console.log(`discount is 0`)
-//     }
-// }
-// discountPrice(80);
-// discountPrice(150);
-// discountPrice(20);
-
-//Write a simple number guessing function. 
+function discountPrice (prices){
+    if (prices >= 100){
+        console.log(`prices ${prices} have a discount of 20`);
+    }else if (prices >= 50){
+        console.log(`prices ${prices} have a discount of 10`);
+    }else{
+        console.log(`discount is 0`)
+    }
+}
+discountPrice(80);
+discountPrice(150);
+discountPrice(20);
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// Write a simple number guessing function. 
 // Provide a secret number and a guess. 
 // Based on those numbers
 //  give players clues if their guess is higher, 
