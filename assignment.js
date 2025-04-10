@@ -352,147 +352,201 @@
 // console.log(checkNumber(0));
 
 // let sentence = "I love JavaScript and coding";
-// let limitedWords = sentence.split(" ", 5); 
-// console.log(limitedWords);
+// // let limitedWords = sentence.split(" ", 5); 
+// // console.log(limitedWords);
 
 
-// setTimeout(() => {
-// console.log("this will repeat...")
-// },1000);
+// // setTimeout(() => {
+// // console.log("this will repeat...")
+// // },1000);
 
-//a funtion that capitalize the input 
-// function  capInput(myName){
-// const validName = myName.trim().toLowerCase();
-// return validName[0].toUpperCase()+ validName.slice(1
-// )+ validName[validName.length =1].toUpperCase();
-// }
-// console.log(capInput("temitope"));
+// //a funtion that capitalize the input 
+// // function  capInput(myName){
+// // const validName = myName.trim().toLowerCase();
+// // return validName[0].toUpperCase()+ validName.slice(1
+// // )+ validName[validName.length =1].toUpperCase();
+// // }
+// // console.log(capInput("temitope"));
 
-// const number =[2,4, 6, 8, 10];
-// const halfNum = number.map((z) =>{
-//     return z*0.5;
-// });
-// console.log(halfNum);
+// // const number =[2,4, 6, 8, 10];
+// // const halfNum = number.map((z) =>{
+// //     return z*0.5;
+// // });
+// // console.log(halfNum);
 
-// const number = [2 ,4 , 8, 10];
-// const trippleNum = number.map((z) =>{
-//     return z*3;
-// });
-// console.log(trippleNum);
-// number.map(() => {
+// // const number = [2 ,4 , 8, 10];
+// // const trippleNum = number.map((z) =>{
+// //     return z*3;
+// // });
+// // console.log(trippleNum);
+// // number.map(() => {
 
-// });
+// // });
 
-// const number = [1, 2, 3, 4, 5];
-// const oddNumber = number.filter((z)=>{
-//     return z <4 && z %2 !== 0;
+// // const number = [1, 2, 3, 4, 5];
+// // const oddNumber = number.filter((z)=>{
+// //     return z <4 && z %2 !== 0;
     
-// })
-// console.log(oddNumber);
+// // })
+// // console.log(oddNumber);
 
-//reverse an array
-// const fruit = ["apple", "papaya", "mango"];
-// fruit.reverse();
-// console.log(fruit);
+// //reverse an array
+// // const fruit = ["apple", "papaya", "mango"];
+// // fruit.reverse();
+// // console.log(fruit);
 
-//2. reverse a string
+// //2. reverse a string
 
 
+
+
+// // 1. Write a function that determines 
+// // whether a given number is positive or negative.
+// // 2. Write a function that 
+// // checks if a number is even or odd.
+// // 3. ⁠Write a function that transforms
+// //  a numerical grade to a letter grade
+// //  (e.g grade 10 should display “A”).
+// // 4. Write a function that calculates 
+// // the ticket price based on age with 
+// // the following conditions: age below 
+// // 12 pay a ticket price of 5, age below 
+// // 18 pay a ticket price of 10, age below 60 
+// // pay a ticket price of 20, age over 60 play a ticket price of
+// // Hover over a message to pin it
+// // keep
+// // 5. Write a function that calculates a 
+// // discount based on the purchase amount.Prices 
+// // equal or over 100 discount have a discount of 20.
+// //  Prices equal or over 50 have a discount of 10.
+// //   Otherwise discount is 0
+// // 6.Write a simple number guessing function.
+//  Provide a secret number and a guess.
+//  Based on those numbers give players clues if their
+//  guess is higher, lower or correct.
+// // ...>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 // 1. Write a function that determines 
 // whether a given number is positive or negative.
+
+// function originalNum(x) {
+//     if (x > 0) {
+//       console.log(`${x} is a positive number`);
+//     } else if (x < 0) {
+//       console.log(`${x} is a negative number`);
+//     } else {
+//       console.log(`${x} is just a number`);
+//     }
+//   }
+//   originalNum(0);
+//   originalNum(-1);
+//   originalNum(1);
+
+// // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 // 2. Write a function that 
 // checks if a number is even or odd.
-// 3. ⁠Write a function that transforms
+// function checkNum(num){
+// if (num %2 ===0){
+//     console.log(`${num} is an even number`);
+// }else{
+//     console.log(`${num} is odd number`);
+// }
+// }
+// checkNum(-4);
+// checkNum(7);
+// checkNum(0);
+
+// // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+// 3 ⁠Write a function that transforms
 //  a numerical grade to a letter grade
 //  (e.g grade 10 should display “A”).
-// 4. Write a function that calculates 
-// the ticket price based on age with 
-// the following conditions: age below 
-// 12 pay a ticket price of 5, age below 
-// 18 pay a ticket price of 10, age below 60 
-// pay a ticket price of 20, age over 60 play a ticket price of
-// Hover over a message to pin it
-// keep
-// 5. Write a function that calculates a 
+
+// function transformNum(a) {
+//     if (a >= 80 && a < 100) {
+//       console.log(`Your grade is A = ${a} `);
+//     } else if (a >= 60 && a <= 79) {
+//       console.log(`Your grade is B = ${a} `);
+//     } else if (a >= 40 && a <= 59) {
+//       console.log(`Your grade is C = ${a} `);
+//     } else if (a >= 30 && a <= 39) {
+//       console.log(`Your grade is D = ${a} `);
+//     } else if (a >= 0 && a <= 29) {
+//       console.log(`You failed! Your grade is F = ${a} `);
+//     } else {
+//       console.log(`${a} does not have a grade`);
+//     }
+//   }
+//   transformNum(61);
+//   transformNum(39);
+//   transformNum(200);
+
+
+// // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//Write a function that calculates the ticket price based on age
+//  with the following conditions: age below 12 pay a ticket
+//  price of 5, age below 18 pay a ticket price of 10,
+//  age below 60 pay a ticket price of 20, age over 60 play 
+// a ticket price of 15.
+
+// function ticetPrice(age){
+// if (age < 12){
+// console.log(`Age ${age} pay a ticket price of 5 `);
+// }else if (age >= 12 && age <= 17){
+// console.log(`Age ${age} pay a ticket price of 10`);
+// }else if (age >= 60 && age <=60){
+//     console.log(`Age ${age} pay a ticket price of 20`);
+// }else{
+//     console.log(`Age ${age} pays ticket price of 15`)
+// }
+// }
+// ticetPrice(8);
+// ticetPrice(15);
+// ticetPrice(100);
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//5. Write a function that calculates a 
 // discount based on the purchase amount.Prices 
 // equal or over 100 discount have a discount of 20.
 //  Prices equal or over 50 have a discount of 10.
 //   Otherwise discount is 0
-// 6. Write a simple number guessing function.
-// ...>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-//1. Write a function that determines 
-// whether a given number is positive or negative.
-function originalNum(x) {
-    if (x > 0) {
-      console.log(`${x} is a positive number`);
-    } else if (x < 0) {
-      console.log(`${x} is a negative number`);
-    } else {
-      console.log(`${x} is just a number`);
-    }
-  }
-  originalNum(0);
-  originalNum(-1);
-  originalNum(1);
+// function calculateDiscountedPrice(purchaseAmount) {
+//   let discountRate = 0;
 
-// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-//2. Write a function that 
-// checks if a number is even or odd.
-function checkNum(num){
-if (num %2 ===0){
-    console.log(`${num} is an even number`);
-}else{
-    console.log(`${num} is odd number`);
-}
-}
-checkNum(-4);
-checkNum(7);
-checkNum(0);
-// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-// Write a function that calculates 
-// the ticket price based on age with 
-// the following conditions: age below 
-// 12 pay a ticket price of 5, age below 
-// 18 pay a ticket price of 10, age below 60 
-// pay a ticket price of 20, age over 60 play a ticket price of
-// Hover over a message to pin it
-// keep
+//   if (purchaseAmount >= 100) {
+//     discountRate = 20;
+//   } else if (purchaseAmount >= 50) {
+//     discountRate = 10;
+//   }
 
-function ticetPrice(age){
-if (age < 12){
-console.log(`Age ${age} pay a ticket price of 5 `);
-}else if (age < 18){
-console.log(`Age ${age} pay a ticket price of 10`);
-}else if (age < 60){
-    console.log(`Age ${age} pay a ticket price of 15`);
-}else{
-    console.log(`Age ${age} pays nothing`)
-}
-}
-ticetPrice(8);
-ticetPrice(15);
-ticetPrice(100);
-// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-// Write a function that calculates a 
-// discount based on the purchase amount.Prices 
-// equal or over 100 discount have a discount of 20.
-//  Prices equal or over 50 have a discount of 10.
-//   Otherwise discount is 0
+//   const discountAmount = (purchaseAmount * discountRate) / 100;
+//   const totalPrice = purchaseAmount - discountAmount;
 
-function discountPrice (prices){
-    if (prices >= 100){
-        console.log(`prices ${prices} have a discount of 20`);
-    }else if (prices >= 50){
-        console.log(`prices ${prices} have a discount of 10`);
-    }else{
-        console.log(`discount is 0`)
-    }
-}
-discountPrice(80);
-discountPrice(150);
-discountPrice(20);
+//   return {
+//     discountRate: discountRate,
+//     discountAmount: discountAmount,
+//     totalPrice: totalPrice
+//   };
+// }
+
+
+// const purchaseAmount = 120; 
+// const result = calculateDiscountedPrice(purchaseAmount);
+
+// console.log(`Purchase Amount: $${purchaseAmount}`);
+// console.log(`Discount Rate: ${result.discountRate}%`);
+// console.log(`Discount Amount: $${result.discountAmount}`);
+// console.log(`Total Price after Discount: $${result.totalPrice}`);
+
+
+
+
+// function calculated (praiceRate){
+// if (praiceRate > 100);
+
+// }
+
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 // Write a simple number guessing function. 
 // Provide a secret number and a guess. 
@@ -500,19 +554,68 @@ discountPrice(20);
 //  give players clues if their guess is higher, 
 // lower or correct.
 
+//  function checkingNum(guessNum, secretNum) {
+//     if (guessNum < secretNum) {
+//       console.log(`${guessNum} is lower than ${secretNum}`);
+//     } else if (guessNum > secretNum) {
+//       console.log(`${guessNum} is higher than ${secretNum}`);
+//     } else if (guessNum === secretNum) {
+//       console.log(`${guessNum} is equals to ${secretNum}`);
+//     } else {
+//       console.log("Guess is wrong");
+//     }
+//   }
+//   checkingNum(8, 1);
+//   checkingNum(-1, 1);
+//   checkingNum(1);
+//   checkingNum(3, 3);
+//
 
-function checkingNum(guessNum, secretNum) {
-    if (guessNum < secretNum) {
-      console.log(`${guessNum} is lower than ${secretNum}`);
-    } else if (guessNum > secretNum) {
-      console.log(`${guessNum} is higher than ${secretNum}`);
-    } else if (guessNum === secretNum) {
-      console.log(`${guessNum} is equals to ${secretNum}`);
-    } else {
-      console.log("Guess is wrong");
-    }
-  }
-  checkingNum(8, 1);
-  checkingNum(-1, 1);
-  checkingNum(1);
-  checkingNum(3, 3);
+// function that doubles each number in
+//  an array using the map() method.
+// const numbers = [1,2,3,4,16];
+// const doublesNumber  = numbers.map(num => num * 2);
+// console.log(doublesNumber);
+
+// function one (x){
+//  console.log("i de with you");
+//  x();
+// }
+
+// function two(){
+//   console.log("no fear");
+// }
+// one(two);
+
+
+
+
+
+
+
+
+function goingOUT (getDress){
+ console.log('wearing my shirt');
+ getDress();
+}
+function wearMyShoes (shoeLace){
+  console.log("shine my shoes");
+  shoeLace();
+}
+function bletOn (bletHuk){
+  console.log("wear my blet");
+  bletHuk();
+}
+function wearMyglasses(makeUp){
+console.log('soon be out');
+makeUp();
+}
+function readyToGo(){
+console.log("see you soon");
+}
+goingOUT(()=>wearMyShoes(()=>bletOn(()=>wearMyglasses(readyToGo))));
+
+
+
+
+
