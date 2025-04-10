@@ -594,27 +594,59 @@
 
 
 
-function goingOUT (getDress){
- console.log('wearing my shirt');
- getDress();
-}
-function wearMyShoes (shoeLace){
-  console.log("shine my shoes");
-  shoeLace();
-}
-function bletOn (bletHuk){
-  console.log("wear my blet");
-  bletHuk();
-}
-function wearMyglasses(makeUp){
-console.log('soon be out');
-makeUp();
-}
-function readyToGo(){
-console.log("see you soon");
-}
-goingOUT(()=>wearMyShoes(()=>bletOn(()=>wearMyglasses(readyToGo))));
+// function goingOUT (getDress){
+//  console.log('wearing my shirt');
+//  getDress();
+// }
+// function wearMyShoes (shoeLace){
+//   console.log("shine my shoes");
+//   shoeLace();
+// }
+// function bletOn (bletHuk){
+//   console.log("wear my blet");
+//   bletHuk();
+// }
+// function wearMyglasses(makeUp){
+// console.log('soon be out');
+// makeUp();
+// }
+// function readyToGo(){
+// console.log("see you soon");
+// }
+// goingOUT(()=>wearMyShoes(()=>bletOn(()=>wearMyglasses(readyToGo))));
 
+
+
+function task1 (callback){
+  setTimeout(()=>{
+    console.log('task 1 completed');
+    callback();
+  },3000);
+}
+
+function task2 (callback){
+  setTimeout(()=>{
+    console.log("task 2 completed");
+    callback();
+  },4000);
+}
+function task3 (callback){
+  setTimeout(()=>{
+    console.log("task 3 completed");
+    callback();
+  },5000);
+}
+function task4 (callback){
+  setTimeout(()=>{
+    console.log("task 4 completed");
+    callback();
+  },6000);
+}
+function task5 (){
+  console.log("All task are complet");
+}
+
+task1(()=>task2(()=>task3(()=>task4(task5))));
 
 
 
