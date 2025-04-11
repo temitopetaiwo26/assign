@@ -514,38 +514,25 @@
 // function calculateDiscountedPrice(purchaseAmount) {
 //   let discountRate = 0;
 
-//   if (purchaseAmount >= 100) {
-//     discountRate = 20;
-//   } else if (purchaseAmount >= 50) {
-//     discountRate = 10;
+
+// function discountamount(amount) {
+//   if (amount >= 100) {
+//     let discount = amount - 20;
+//     console.log(`Discount is 20, so he's to pay ${discount}`);
+//   } else if (amount >= 50) {
+//     let discount = amount - 10;
+//     console.log(`Discount is 10, so he's to pay ${discount}`);
+//   } else {
+//     console.log(`Discount is 0, so he pay no ${amount}`);
 //   }
-
-//   const discountAmount = (purchaseAmount * discountRate) / 100;
-//   const totalPrice = purchaseAmount - discountAmount;
-
-//   return {
-//     discountRate: discountRate,
-//     discountAmount: discountAmount,
-//     totalPrice: totalPrice
-//   };
 // }
 
-
-// const purchaseAmount = 120; 
-// const result = calculateDiscountedPrice(purchaseAmount);
-
-// console.log(`Purchase Amount: $${purchaseAmount}`);
-// console.log(`Discount Rate: ${result.discountRate}%`);
-// console.log(`Discount Amount: $${result.discountAmount}`);
-// console.log(`Total Price after Discount: $${result.totalPrice}`);
+// discountamount(150);
+// discountamount(130);
+// discountamount(70);
+// discountamount(40);
 
 
-
-
-// function calculated (praiceRate){
-// if (praiceRate > 100);
-
-// }
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 // Write a simple number guessing function. 
@@ -617,37 +604,168 @@
 
 
 
-function task1 (callback){
-  setTimeout(()=>{
-    console.log('task 1 completed');
-    callback();
-  },3000);
-}
+// function task1 (callback){
+//   setTimeout(()=>{
+//     console.log('task 1 completed');
+//     callback();
+//   },3000);
+// }
 
-function task2 (callback){
-  setTimeout(()=>{
-    console.log("task 2 completed");
-    callback();
-  },4000);
-}
-function task3 (callback){
-  setTimeout(()=>{
-    console.log("task 3 completed");
-    callback();
-  },5000);
-}
-function task4 (callback){
-  setTimeout(()=>{
-    console.log("task 4 completed");
-    callback();
-  },6000);
-}
-function task5 (){
-  console.log("All task are complet");
-}
+// function task2 (callback){
+//   setTimeout(()=>{
+//     console.log("task 2 completed");
+//     callback();
+//   },4000);
+// }
+// function task3 (callback){
+//   setTimeout(()=>{
+//     console.log("task 3 completed");
+//     callback();
+//   },5000);
+// }
+// function task4 (callback){
+//   setTimeout(()=>{
+//     console.log("task 4 completed");
+//     callback();
+//   },6000);
+// }
+// function task5 (){
+//   console.log("All task are complet");
+// }
 
-task1(()=>task2(()=>task3(()=>task4(task5))));
+// task1(()=>task2(()=>task3(()=>task4(task5))));
 
+
+
+
+
+//ILE IYAN ELEWE
+
+// place order
+// prepare food
+//prepare soup
+//add stain
+//select drink
+//food on the way
+//enjoy meal
+
+// const menu = {
+//   food: ["yam", "semo"],
+//   soup: ["efo", "ila", "ewedu"],
+//   stain: ["goat meat", "brokoto", "assorted", "ponmo"],
+//   drink: ["water", "palm wine", "soft dink"],
+// };
+
+// function placeOrder(
+//   prepare_meal,
+//   food_select,
+//   soup_select,
+//   stain_select,
+//   drink_select
+// ) {
+//   setTimeout(() => {
+//     console.log(
+//       `You have decided to eat ${
+//         menu.food[food_select] === "yam" ? "pounded yam" : "semo"
+//       }`
+//     );
+//     prepare_meal(soup_select, stain_select, drink_select);
+//   }, 2000);
+// }
+
+// function prepareFood(soup_select, stain_select, drink_select) {
+//   setTimeout(() => {
+//     console.log("food bn prepared");
+//     setTimeout(() => {
+//       console.log(`your ${menu.soup[soup_select]} is bn prepared too`);
+//       setTimeout(() => {
+//         console.log(`you picked ${menu.stain[stain_select]} as accessory`);
+//         setTimeout(() => {
+//           console.log(`you picked ${menu.drink[drink_select]} as drink`);
+//           setTimeout(() => {
+//             console.log("Food almost ready");
+//             setTimeout(() => {
+//               console.log("Enjoy your meal");
+//             }, 1000);
+//           }, 1000);
+//         }, 2000);
+//       }, 2000);
+//     }, 2000);
+//   }, 1000);
+// }
+
+// placeOrder(prepareFood, 1, 1, 2, 0);
+
+
+//run a small cake company using callback hell
+// .......... minimum of 8 steps, minimum of 6 menu items,
+// all used in the hell.....to be submitted within 20hours
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+//menu items
+// Chocolate Cake​
+// Vanilla Cake​
+// Red Velvet Cake​
+// Lemon Drizzle Cake​
+// Carrot Cake​
+// Black Forest Cake
+
+
+//Receive Order
+//​Prepare Ingredients
+// Bake Cake​
+// Cool Cake​
+// Package Cake​
+// Deliver Cake
+// makePayMent
+//thank you for choosing us.
+
+const menu ={
+    cake: ["medium", "large", ],
+    flavour:["vanila", "orange"],
+    size:["small", "biggi"],
+    design:["froest","catoon"],
+    coluor:["red","mixedColour"],
+    topping:["icecream", "agbalomoTop"],
+};
+
+function receiveOder(order, select_large,select_orange, select_catoon, select_red, select_icecream){
+    setTimeout(()=>{
+     console.log('we recived your order')
+     order(select_large,select_orange,select_catoon,select_red, select_icecream);
+    },1000);
+
+}
+function prepareIngredient(select_large, select_orange, select_catoon,select_red, select_icecream){
+    setTimeout(()=>{
+ console.log('ingredient available for use');
+   setTimeout(() => {
+    console.log(`we are preparing ${menu.cake[select_large]} cake`);
+    setTimeout(()=>{
+        console.log(` baking  ${menu.flavour[select_orange]} flavour cake`);
+        setTimeout(()=>{
+            console.log(`we are making a ${menu.design[select_catoon]} design cake`);
+            setTimeout(()=>{
+                console.log(`with a  ${menu.coluor[select_red]}  fundant`);
+                setTimeout(() => {
+                    console.log(`also coming with  ${menu.topping[select_icecream]} topping.`);
+                    setTimeout(() => {
+                        console.log('verifing payment');
+                        setTimeout(() => {
+                            console.log('Thanks for your patronage');
+                        },1000);
+                    },1000);
+                },2000);
+            },2000);
+        },2000);
+    },2000);
+   },1000);
+},1500);
+
+}
+receiveOder(prepareIngredient,1,1,1,0,0,0);
 
 
 

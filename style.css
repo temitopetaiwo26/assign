@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: whitesmoke;
+
+
+    
+}
+li{
+    list-style: none;
+    font-size: 20px;
+}
+
+footer{
+    /* position: fixed;
+    bottom: 0; */
+    background-color: red;
+    margin-top: auto;
+    text-align: center;
+
+}
