@@ -906,8 +906,8 @@
 // }
 // jokes();
 
-//TRY AND CATCTH 
-//https://randomuser.me/api/
+// TRY AND CATCTH 
+// https://randomuser.me/api/
 // const radomuser ="https://randomuser.me/api/"
 // async function userGide (){
 //     try{
