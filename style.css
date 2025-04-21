@@ -1,29 +1,62 @@
-body{
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body{
     display: flex;
     flex-direction: column;
     min-height: 100dvh;
+} */
+/* another way to centeralize an element */
+body{
+    display: grid;
+    align-items: center;
+    height: 100dvh;
+    width: 100%;
+}
+
+h1{
+display: flex;
+height: 100dvh;
+justify-content: center;
+align-items: center;
 }
 
 
-.navbar{
+/* .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: whitesmoke;
-
-
-    
+    background-color: whitesmoke;   
 }
 li{
     list-style: none;
     font-size: 20px;
+} */
+
+/* Another method of creating navbar */
+.navbar {
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    padding: 0.5rem 4rem;
+
 }
+.navlinks{
+    display: flex;
+    
+}
+/* li{
+    padding-right: 1.5rem;
+    list-style: none;
+} */
 
 footer{
-    /* position: fixed;
-    bottom: 0; */
     background-color: red;
     margin-top: auto;
     text-align: center;
 
-}
+} */

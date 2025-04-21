@@ -722,50 +722,247 @@
 // makePayMent
 //thank you for choosing us.
 
-const menu ={
-    cake: ["medium", "large", ],
-    flavour:["vanila", "orange"],
-    size:["small", "biggi"],
-    design:["froest","catoon"],
-    coluor:["red","mixedColour"],
-    topping:["icecream", "agbalomoTop"],
-};
+// const menu ={
+//     cake: ["medium", "large", ],
+//     flavour:["vanila", "orange"],
+//     size:["small", "biggi"],
+//     design:["froest","catoon"],
+//     coluor:["red","mixedColour"],
+//     topping:["icecream", "agbalomoTop"],
+// };
 
-function receiveOder(order, select_large,select_orange, select_catoon, select_red, select_icecream){
-    setTimeout(()=>{
-     console.log('we recived your order')
-     order(select_large,select_orange,select_catoon,select_red, select_icecream);
-    },1000);
+// function receiveOder(order, select_large,select_orange, select_catoon, select_red, select_icecream){
+//     setTimeout(()=>{
+//      console.log('we recived your order')
+//      order(select_large,select_orange,select_catoon,select_red, select_icecream);
+//     },1000);
 
-}
-function prepareIngredient(select_large, select_orange, select_catoon,select_red, select_icecream){
-    setTimeout(()=>{
- console.log('ingredient available for use');
-   setTimeout(() => {
-    console.log(`we are preparing ${menu.cake[select_large]} cake`);
-    setTimeout(()=>{
-        console.log(` baking  ${menu.flavour[select_orange]} flavour cake`);
-        setTimeout(()=>{
-            console.log(`we are making a ${menu.design[select_catoon]} design cake`);
-            setTimeout(()=>{
-                console.log(`with a  ${menu.coluor[select_red]}  fundant`);
-                setTimeout(() => {
-                    console.log(`also coming with  ${menu.topping[select_icecream]} topping.`);
-                    setTimeout(() => {
-                        console.log('verifing payment');
-                        setTimeout(() => {
-                            console.log('Thanks for your patronage');
-                        },1000);
-                    },1000);
-                },2000);
-            },2000);
-        },2000);
-    },2000);
-   },1000);
-},1500);
+// }
+// function prepareIngredient(select_large, select_orange, select_catoon,select_red, select_icecream){
+//     setTimeout(()=>{
+//  console.log('ingredient available for use');
+//    setTimeout(() => {
+//     console.log(`we are preparing ${menu.cake[select_large]} cake`);
+//     setTimeout(()=>{
+//         console.log(` baking  ${menu.flavour[select_orange]} flavour cake`);
+//         setTimeout(()=>{
+//             console.log(`we are making a ${menu.design[select_catoon]} design cake`);
+//             setTimeout(()=>{
+//                 console.log(`with a  ${menu.coluor[select_red]}  fundant`);
+//                 setTimeout(() => {
+//                     console.log(`also coming with  ${menu.topping[select_icecream]} topping.`);
+//                     setTimeout(() => {
+//                         console.log('verifing payment');
+//                         setTimeout(() => {
+//                             console.log('Thanks for your patronage');
+//                         },1000);
+//                     },1000);
+//                 },2000);
+//             },2000);
+//         },2000);
+//     },2000);
+//    },1000);
+// },1500);
 
-}
-receiveOder(prepareIngredient,1,1,1,0,0,0);
+// }
+// receiveOder(prepareIngredient,1,1,1,0,0,0);
+
+// function myName(temi){
+//     console.log('i am here');
+// }
+// myName();
+
+// const add = (a,b)=>{
+//     return a+b;
+// }
+// console.log(1+2);
+
+// function add (num){
+// console.log(1+2);
+// }
+// add();
+
+// const double = x => x*2;
+// console.log(2*2);
+
+// const multiple = (x,y) => x*y;
+// console.log(multiple(4,2));
+
+
+//return a value from a function
+
+// function multiple (a,b){
+//     return(a*b);
+// }
+// const result= multiple(3,3);
+// console.log(result);
+
+// let myName = "temi";
+// let num = 23;
+// let iLovescript = true;
+// console.log(typef(myName));
+// console.log(typeof(num));
+// console.log(typeof(iLovescript));
+
+// function isadult(age){
+// return age >= 18;
+// }
+// console.log(isadult(20));
+
+// const promise = new promise((resolve, reject) => {
+//     resolve("it worked");
+// });
+// console.log(promise);
+
+
+
+
+// const Promise = new Promise(function(resolve, reject) {
+//     resolve("It worked!");
+//   });
+  
+//   promise.then(result => console.log(result));
+
+// const promise1 = Promise.resolve(3);
+// const promise2 = 42; 
+// const promise3 = new Promise((resolve, reject) => {
+//     setTimeout(resolve, 100, "foo");
+// });
+
+// Promise.all([promise1, promise2, promise3]).then((values) =>{
+// console.log(values);
+// });
+
+// const myPromise = new Promise((resolve, reject) => {
+//   const randomNumber = Math.floor(Math.random() *8);
+//   console.log(randomNumber);
+//     if (randomNumber > 2) {
+//       resolve("na you oo");
+//     } else {
+//       reject("na wa oo");
+//     }
+//   });
+//   console.log(Promise);
+
+//An object
+// let person = {
+//     name:"tope",
+//     age : 24,
+//     car : 'toyota',
+//     address: "oni street egbeda"
+// };
+// console.log(person.name);
+// console.log(person.age);
+// console.log(person.car);
+// console.log(person.address);
+
+
+
+// const catFact = "https://catfact.ninja/fact"
+// const fact = fetch(catFact).then((response)=> response.json())
+// .then((myFact)=>{
+//     console.log(myFact.fact);
+//     console.log(myFact.length)
+// })
+// .catch((error)=>{
+//  console.log(error);
+// });
+
+// const myName = "https://api.agify.io?name=temitope"
+// const task = fetch(myName).then((response)=> response.json())
+// .then((task2)=>{
+//     console.log(task2.name);
+//     console.log(task2.count);
+//     console.log(task2.age);
+
+// })
+// .catch((error)=>{
+// console.log(error);
+// })
+//const factCheck = "https://api.agify.io?name=yetunde"
+// async function checkFact (){
+//     const result = await fetch("https://catfact.ninja/fact");
+//     const data = await result.json();
+//     console.log(data);
+//    // console.log(`${data.name} is ${data.age} years old `);
+    
+// }
+// checkFact();
+
+
+
+//https://official-joke-api.appspot.com/random_joke
+
+// const officialJokes ="https://official-joke-api.appspot.com/random_joke"
+// async function jokes (){
+//     const fecthJokes = await fetch(officialJokes)
+//     const dataJokes = await fecthJokes.json();
+//     console.log(dataJokes);
+//     console.log(dataJokes.setup);
+//     setTimeout(() => {
+//         console.log(dataJokes.punchline);
+//     },3000);
+       
+// }
+// jokes();
+
+//TRY AND CATCTH 
+//https://randomuser.me/api/
+// const radomuser ="https://randomuser.me/api/"
+// async function userGide (){
+//     try{
+//     const radom = await fetch(radomuser)
+//     const data = await radom.json();
+//     console.log(data);
+//     console.log(data.info.seed);
+//     console.log(data.info.results);
+//     console.log(data.info.results);
+//     setTimeout(() => {
+//         console.log(data.results);
+//     },3000);  
+// }catch (error){
+//     console.log(error);
+//     } 
+// }
+// userGide();
+
+
+
+
+// async function getData() {
+//   try {
+//     const response = await fetch("https://catfact.ninja/factsss");
+//     const data = await response.json();
+//     console.log(data);
+//   } catch (error) {
+//     console.(error);
+//   }
+// }
+
+// getData();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
